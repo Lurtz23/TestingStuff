@@ -32,12 +32,16 @@ namespace UdemyTestProject.PageObject
 
         public void EnterUsername()
         {
-            username.SendKeys("lurtz23");
+            Random randomGenerator = new Random();
+            int randomInt = randomGenerator.Next(100);
+            username.SendKeys("lurtz" + randomInt);
         }
 
         public void EnterEmail()
         {
-            email.SendKeys("sarpbakis@gmail.com");
+            Random randomGenerator = new Random();
+            int randomInt = randomGenerator.Next(100);
+            email.SendKeys("sarpbakis" + randomInt + "@gmail.com");
         }
 
         public void EnterPassword()
